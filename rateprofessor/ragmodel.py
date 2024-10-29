@@ -10,11 +10,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from sklearn.metrics.pairwise import cosine_similarity
 from langchain_pinecone import PineconeVectorStore
 import os
-import json
 import tiktoken
-import requests
-from bs4 import BeautifulSoup
-import sys
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def get_data(url):
@@ -79,7 +75,6 @@ def get_data(url):
     response_data = {
         "success": True,
         "message": "Data loaded successfully",
-        "data": review_data
     }
     return response_data
 
