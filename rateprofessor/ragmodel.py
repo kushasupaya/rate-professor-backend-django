@@ -2,7 +2,6 @@ from dotenv import load_dotenv
 load_dotenv()
 from pinecone import Pinecone, ServerlessSpec
 from openai import OpenAI
-# from langchain_huggingface import HuggingFaceEmbeddings
 from sentence_transformers import SentenceTransformer
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.document_loaders import UnstructuredPDFLoader, OnlinePDFLoader, WebBaseLoader, YoutubeLoader, DirectoryLoader, TextLoader, PyPDFLoader
